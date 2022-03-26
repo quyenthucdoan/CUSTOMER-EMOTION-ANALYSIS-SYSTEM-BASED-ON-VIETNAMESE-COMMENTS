@@ -1,0 +1,11 @@
+version: '3'
+
+services: 
+  telehealth_api:
+    build: .
+    container_name: "telehealth_api"
+    ports:
+      - "3338:3338"
+    volumes:
+      - .:/telehealth_api
+    network_mode: "host"

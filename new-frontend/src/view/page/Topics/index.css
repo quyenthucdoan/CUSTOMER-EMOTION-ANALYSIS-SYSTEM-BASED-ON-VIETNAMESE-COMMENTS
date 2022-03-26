@@ -1,0 +1,7 @@
+.observablehq {
+  display: none;
+}
+
+.observablehq:first-child {
+  display: block;
+}

@@ -1,0 +1,10 @@
+.observablehq {
+  display: none;
+}
+
+.observablehq:first-child {
+  display: block;
+}
+.m-portlet  .m-portlet--full-height {
+  border-right: 1px solid #ebedf2 !important;
+}

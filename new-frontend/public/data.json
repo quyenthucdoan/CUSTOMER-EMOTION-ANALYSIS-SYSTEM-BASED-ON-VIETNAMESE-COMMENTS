@@ -1,0 +1,40 @@
+{
+    "nodes": [
+      {"id": "선거", "group": 1, "value": 55},
+      {"id": "운동", "group": 4, "value": 51},
+      {"id": "불법", "group": 1, "value": 4},
+      {"id": "전과", "group": 3, "value": 7},
+      {"id": "입건", "group": 1, "value": 5},
+      {"id": "음주", "group": 4, "value": 5},
+      {"id": "부패", "group": 2, "value": 6},
+      {"id": "개선", "group": 2, "value": 3},
+      {"id": "적발", "group": 3, "value": 7},
+      {"id": "2회", "group": 2, "value": 2},
+      {"id": "선거원", "group": 3, "value": 3},
+      {"id": "지역", "group": 5, "value": 8},
+      {"id": "검찰", "group": 8, "value": 9},
+      {"id": "조국", "group": 6, "value": 2},
+      {"id": "부적합", "group": 9, "value": 10},
+      {"id": "적폐", "group": 5, "value": 12},
+      {"id": "개혁", "group": 4, "value": 5},
+      {"id": "민심", "group": 8, "value": 2}
+    ],
+    "links": [
+      {"source": "운동", "target": "선거", "value": 50},
+      {"source": "민심", "target": "선거", "value": 2},
+      {"source": "운동", "target": "불법", "value": 1},
+      {"source": "불법", "target": "선거", "value": 3},
+      {"source": "전과", "target": "입건", "value": 1},
+      {"source": "전과", "target": "개선", "value": 4},
+      {"source": "음주", "target": "전과", "value": 7},
+      {"source": "전과", "target": "2회", "value": 2},
+      {"source": "전과", "target": "적발", "value": 3},
+
+      {"source": "선거원", "target": "지역", "value": 2},
+      {"source": "부적합", "target": "선거원", "value": 5},
+      {"source": "개혁", "target": "적폐", "value": 3},
+      {"source": "검찰", "target": "개혁", "value": 10},
+      {"source": "개혁", "target": "부패", "value": 6},
+      {"source": "조국", "target": "개혁", "value": 2}
+    ]
+}
