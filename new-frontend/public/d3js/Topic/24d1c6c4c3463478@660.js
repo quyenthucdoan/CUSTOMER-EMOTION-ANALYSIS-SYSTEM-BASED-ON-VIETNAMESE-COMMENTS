@@ -10,7 +10,7 @@ export default function define(runtime, observer) {
       .attr('id', 'ldavis_container1')
       .classed('ldavis_container', true)
       .node();
-    new LDAvis('#ldavis_container1', data);
+    new LDAvis('#ldavis_container1', data); 
   }
   );
   main.variable(observer("data")).define("data", ["d3v5"], function (d3v5) {

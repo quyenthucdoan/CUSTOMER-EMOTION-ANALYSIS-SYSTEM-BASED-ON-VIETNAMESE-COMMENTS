@@ -162,7 +162,7 @@ const TopicDetails = () => {
       </div>
       <div className="m-portlet__body">
         <div className="row">
-          {topics.map((word, index) => (
+          {topics.map((word, index) => ( 
             <div style={{ width: '400px', heigh: '400px' }}>
               <div
                 style={{
@@ -175,7 +175,7 @@ const TopicDetails = () => {
                   margin: '5px',
                 }}
               >
-                <h5>Topic {index + 1}</h5>
+                <h5>Topic {index + 1} </h5>
                 <WordCloudControl word={word} />
               </div>
             </div>

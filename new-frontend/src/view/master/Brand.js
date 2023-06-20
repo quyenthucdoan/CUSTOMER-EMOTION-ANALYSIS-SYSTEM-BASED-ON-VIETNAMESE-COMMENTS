@@ -5,7 +5,7 @@ const Brand = () => (
     <div className="m-stack__item m-stack__item--middle m-brand__logo">
       <a href="#0" className="m-brand__logo-wrapper">
         <h2 style={{ fontWeight: 'bolder', color: 'white', width: '600px' }}>
-          Customer Service Mention
+          Customer Comment Analysis
         </h2>
       </a>
     </div>

@@ -147,8 +147,8 @@ const Listing = () => {
                           backgroundColor: getColor(item.sentiment),
                         }}
                       >
-                        <td className="m-datatable__cell">
-                          <span>{item.raw_text}</span>
+                        <td className="m-datatable__cell"> 
+                          <span>{item.rawtext}</span>  
                         </td>
                         <td
                           style={{ width: '200px' }}

@@ -4,7 +4,7 @@ from app import db
 def getTerms(numOfTerms=15):
     print(numOfTerms)
     if numOfTerms:
-        numOfTerms = 15
+        numOfTerms = 20
     results = []
     for i in range(10):
         query = """

@@ -16,7 +16,7 @@ database_uri = 'postgresql://{dbuser}:{dbpass}@{dbhost}/{dbname}'.format(
     dbuser='postgres',
     dbpass='111',
     dbhost='localhost',
-    dbname='cms_local'
+    dbname='analysis'
 )
 
 # Class-based application configuration

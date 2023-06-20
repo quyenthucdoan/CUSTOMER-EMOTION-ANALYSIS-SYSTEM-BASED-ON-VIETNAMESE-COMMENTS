@@ -2,8 +2,8 @@ from app import db
 
 def getByKeyword(filterKeyword, currentPage):
     count = db.engine.execute("""
-        select count(*) from csm
-            where (length(%s) = 0 or raw_text like '%%' || %s ||'%%')
+        select count(*) from public.analysis
+            where (length(%s) = 0 or text like '%%' || %s ||'%%')
     """, filterKeyword, filterKeyword).fetchone()
 
     total = 0
@@ -11,8 +11,8 @@ def getByKeyword(filterKeyword, currentPage):
     if count is not None and len(count) > 0:
         total = count[0]
         temps = db.engine.execute("""
-            select * from Csm
-            where (length(%s) = 0 or raw_text like '%%' || %s ||'%%')
+            select * from public.analysis
+            where (length(%s) = 0 or text like '%%' || %s ||'%%')
             LIMIT %s OFFSET %s
         """, filterKeyword, filterKeyword, 10, (currentPage-1)*10)
     
@@ -24,7 +24,7 @@ def getByKeyword(filterKeyword, currentPage):
 def getCsmSentiment():
     temps = db.engine.execute("""
             select sentiment, count(*) as value 
-            from csm 
+            from public.analysis 
             group by sentiment
             order by sentiment desc
         """)

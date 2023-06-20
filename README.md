@@ -1,6 +1,6 @@
-# Customer Service Mention Project
+# Customer Comment Analysis Project
 
-The repo for Customer Service Mention Project
+The repo for Customer Comment Analysis Project
 
 # Docker commands
 

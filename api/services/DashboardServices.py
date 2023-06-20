@@ -23,7 +23,7 @@ def getEmotionStats():
 
 def getKeyword(method, numOfKeyword = 50):
     query = """
-        SELECT keyword, pseudo_freq FROM keyword
+        SELECT keyword, pseudo_freq FROM public.keyword_product
         ORDER BY pseudo_freq DESC
         LIMIT {1}
     """.format(method, numOfKeyword)
